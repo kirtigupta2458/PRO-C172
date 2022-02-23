@@ -279,23 +279,14 @@ AFRAME.registerComponent("markerhandler", {
     tableNumber <= 9 ? (tNumber = `T0${tableNumber}`) : `T${tableNumber}`;
 
     //Reseting current orders and total bill
-    firebase
-      .firestore()
-      .collection("tables")
-      .doc(tNumber)
-      .update({
-        current_orders: {},
-        total_bill: 0
-      })
-      .then(() => {
-        swal({
-          icon: "success",
-          title: "Thanks For Paying !",
-          text: "We Hope You Enjoyed Your Food !!",
-          timer: 2500,
-          buttons: false
-        });
-      });
+   
+    
+    
+    
+    
+    
+    
+    
   },
   handleMarkerLost: function () {
     // Changing button div visibility
